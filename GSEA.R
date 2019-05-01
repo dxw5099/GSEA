@@ -45,14 +45,12 @@ write.table(ranks_RNAseq_final, rnk_file,col.name = TRUE, sep="\t", row.names = 
 GSEA_expression <- data[, c(12, 14,6:11)]
 colnames(GSEA_expression)[1] <- "Name"
 colnames(GSEA_expression)[2] <- "Description"
+input_file <- file.path(working_dir,"RNAseq_expression_input.txt")
+write.table(GSEA_expression, input_file,col.name = TRUE, sep="\t",row.names = FALSE, quote = FALSE)
 
 #Creat class file for GSEA
 
 sample_info <- read.table(file.path(working_dir, "sample_info.csv"),sep=',',header=T)
-
-
-
-
 GSEA_class <- file(
   file.path(working_dir,"GSEA_classes.cls"))
 writeLines(c(paste(length(sample_info$Sample_Name), length(levels(sample_info$Group)), "1"),
@@ -63,7 +61,7 @@ write.table(t(as.character(sample_info$Group)),
 close(GSEA_class)
 
 
-########## run GSEA
+########## run GSEA ##############
 gsea_jar <- "/Applications/gsea-3.0.jar"
 run_gsea = TRUE
 gsea_directory = ""
@@ -74,6 +72,7 @@ analysis_name <- "G1_vs_G2"
 #Run GSEA with gene set randomization
 timestamp()
 start_gs_perm <- Sys.time()
+### input option #1: pre-ranked gene list #######
 if(run_gsea){
   command <- paste("java -Xmx8G -cp",gsea_jar, "xtools.gsea.GseaPreranked -gmx",
                    dest_gmt_file, "-rnk" ,rnk_file,
@@ -85,5 +84,19 @@ if(run_gsea){
                    file.path(working_dir,"apr30"), "-gui false > gsea_output.txt",sep=" ")
   system(command)
 }
+
+### input option #2: expression file and phenotype file #######
+#if(run_gsea){
+#  command <- paste("java -Xmx8G -cp",gsea_jar, "xtools.gsea.GseaPreranked -gmx",
+#                   dest_gmt_file, "-rnk" ,rnk_file,
+#                   "-cls",file.path(working_dir,"GSEA_classes.cls"),
+#                   "-collapse false -nperm ",num_randomizations,
+#                   " -permute gene_set -scoring_scheme weighted -rpt_label ",
+#                   paste(analysis_name,"gsrand",sep="_"),
+#                   " -num 100 -plot_top_x 20 -rnd_seed 12345 -set_max 200 -set_min 15 -zip_report false -out" ,
+#                   file.path(working_dir,"apr30"), "-gui false > gsea_output.txt",sep=" ")
+#  system(command)
+#}
+
 stop_gs_perm <- Sys.time()
 timestamp()
