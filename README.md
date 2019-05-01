@@ -21,6 +21,7 @@ An example enrichment plot for the top pathway in the G1 set:
 
 ![image](https://user-images.githubusercontent.com/19800554/57028992-69574f80-6bf5-11e9-9081-a944ed6ca0d5.png)
 
+*Enrichment plot: ROSTY_CERVICAL_CANCER_PROLIFERATION_CLUSTER (Profile of the Running ES Score & Positions of GeneSet Members on the Rank Ordered List)
 
 An example enrichment plot for the top pathway in the G2 set:
 
