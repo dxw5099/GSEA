@@ -16,7 +16,12 @@ Output summary:
 <img width="568" alt="Screen Shot 2019-05-01 at 9 32 39 AM" src="https://user-images.githubusercontent.com/19800554/57028494-16c96380-6bf4-11e9-8523-b79c607651f4.png">
 
 
-![image](https://user-images.githubusercontent.com/19800554/57028930-3614c080-6bf5-11e9-9fca-61aa90ba26d4.png)
 
 
 ![image](https://user-images.githubusercontent.com/19800554/57028992-69574f80-6bf5-11e9-9081-a944ed6ca0d5.png)
+
+
+![image](https://user-images.githubusercontent.com/19800554/57029100-a28fbf80-6bf5-11e9-9a72-85c93ad67b27.png)
+
+![image](https://user-images.githubusercontent.com/19800554/57028930-3614c080-6bf5-11e9-9fca-61aa90ba26d4.png)
+
