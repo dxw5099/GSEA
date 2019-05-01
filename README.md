@@ -6,6 +6,7 @@ Gene Set Enrichment Analysis (GSEA) is particularly suitable and is recommended 
 * These running sum values are weighted, so that enrichment in the very top- (and bottom-) ranking genes is amplified, whereas enrichment in genes with more moderate ranks are not amplified.
 * THE ES score is calculated as the maximum value of the running sum and normalized relative to pathway size, resulting in a normalized enrichment score (NES) that reflects the enrichment of the pathway in the list. 
 
+
 Two input options:
 1. pre-ranked list
 2. expression file and phenotype file
