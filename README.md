@@ -10,3 +10,7 @@ Gene Set Enrichment Analysis (GSEA) is particularly suitable and is recommended 
 Two input options:
 1. pre-ranked list
 2. expression file and phenotype file
+
+Output summary:
+
+<img width="568" alt="Screen Shot 2019-05-01 at 9 32 39 AM" src="https://user-images.githubusercontent.com/19800554/57028494-16c96380-6bf4-11e9-8523-b79c607651f4.png">
