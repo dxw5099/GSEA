@@ -1,3 +1,9 @@
+#########################################################################
+# File Name: GSEA.R
+# Author: Di Wu
+# mail: di.wu@cshs.org
+# Created Time: May 2019
+#########################################################################
 working_dir <- file.path(getwd(), "test")
 #Load Expression Data
 
