@@ -17,11 +17,16 @@ Output summary:
 
 
 
+An example enrichment plot for the top pathway in the G1 set:
 
 ![image](https://user-images.githubusercontent.com/19800554/57028992-69574f80-6bf5-11e9-9081-a944ed6ca0d5.png)
 
 
+An example enrichment plot for the top pathway in the G2 set:
+
 ![image](https://user-images.githubusercontent.com/19800554/57029100-a28fbf80-6bf5-11e9-9a72-85c93ad67b27.png)
+
+*Enrichment plot: LEE_NEURAL_CREST_STEM_CELL_DN(Profile of the Running ES Score & Positions of GeneSet Members on the Rank Ordered List)
 
 ![image](https://user-images.githubusercontent.com/19800554/57028930-3614c080-6bf5-11e9-9fca-61aa90ba26d4.png)
 
